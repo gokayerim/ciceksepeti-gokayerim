@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const StyledHeaderWrapper = styled.header`
-  width: 80%;
+  width: 60%;
   height: 4rem;
   display: flex;
-  margin: auto;
+  margin: 1rem auto;
   justify-content: space-between;
   align-items: center;
 `;

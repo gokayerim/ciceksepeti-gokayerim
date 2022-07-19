@@ -28,13 +28,13 @@ export const secondary = css`
 
 export const gray = css`
   background-color: ${(props) => props.theme.colors.white};
-  color: ${(props) => props.theme.colors.gray};
-  border: 1px solid ${(props) => props.theme.colors.light_gray};
+  color: ${(props) => props.theme.colors.gray_01};
+  border: 1px solid ${(props) => props.theme.colors.gray_02};
   &:hover {
-    color: ${(props) => props.theme.colors.light_gray};
+    color: ${(props) => props.theme.colors.gray_02};
   }
   &:active {
-    color: ${(props) => props.theme.colors.light_gray};
+    color: ${(props) => props.theme.colors.gray_02};
   }
 `;
 
