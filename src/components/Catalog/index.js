@@ -26,6 +26,7 @@ const Catalog = () => {
         filteredProducts?.map((product) => (
           <Product
             key={product.id}
+            id={product.id}
             thumbnail={product.thumbnail}
             title={product.title}
             price={product.price}

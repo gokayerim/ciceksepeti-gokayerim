@@ -19,3 +19,14 @@ export const StyledProductPrice = styled.div`
   font-weight: 800;
   padding: 10px;
 `;
+
+export const StyledAmountSelector = styled.div`
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid ${({ theme }) => theme.colors.gray_02};
+  border-radius: 30px;
+  padding: 0.5rem;
+  button {
+    font-size: 18px;
+  }
+`;
