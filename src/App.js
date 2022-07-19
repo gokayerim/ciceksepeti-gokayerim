@@ -1,7 +1,12 @@
-import Header from "./layout/Header";
+import Catalog from "./components/Catalog";
+import Layout from "./layout";
 
 function App() {
-  return <Header></Header>;
+  return (
+    <Layout>
+      <Catalog />
+    </Layout>
+  );
 }
 
 export default App;

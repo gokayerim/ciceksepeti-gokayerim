@@ -9,7 +9,7 @@ export const StyledCartIcon = styled.i`
 `;
 
 export const StyledBadge = styled.span`
-  position: absoulute;
+  position: absolute;
   display: inline-flex;
   justify-content: center;
   align-items: center;

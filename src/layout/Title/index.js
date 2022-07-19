@@ -1,7 +1,12 @@
 import React from "react";
+import { StyledTitle, StyledTitleWrapper } from "./styles";
 
 const Title = () => {
-  return <div>Title</div>;
+  return (
+    <StyledTitleWrapper>
+      <StyledTitle>Çiçek Sepeti H1</StyledTitle>
+    </StyledTitleWrapper>
+  );
 };
 
 export default Title;

@@ -1,5 +1,8 @@
+import catalogMock from "../../../mocks/catalog.mock";
+
 export const initialState = {
-  cart: [],
+  products: catalogMock.data,
+  searchTerm: "",
 };
 
 export const reducer = (state, action) => {
@@ -10,6 +13,13 @@ export const reducer = (state, action) => {
 
     case "REMOVE_CART_ITEM": {
       return;
+    }
+
+    case "SET_SEARCH_TERM": {
+      return { ...state, searchTerm: action.payload.toLowerCase() };
+    }
+    case "RESET_SEARCH_TERM": {
+      return { ...state, searchTerm: "" };
     }
 
     default: {

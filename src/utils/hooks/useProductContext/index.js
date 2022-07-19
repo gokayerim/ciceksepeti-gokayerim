@@ -5,9 +5,9 @@ const store = createContext(initialState);
 
 const { Provider } = store;
 
-export const CartProvider = ({ children }) => {
+export const ProductProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return <Provider value={{ state, dispatch }}>{children}</Provider>;
 };
-export const useCartContext = () => useContext(store);
+export const useProductContext = () => useContext(store);
