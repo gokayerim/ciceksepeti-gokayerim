@@ -1,7 +1,12 @@
-import React from "react";
+import logo from "../../assets/images/logo.png";
+import { StyledHeaderWrapper, StyledLogo } from "./styles";
 
 const Header = () => {
-  return <div>Header</div>;
+  return (
+    <StyledHeaderWrapper>
+      <StyledLogo src={logo} />
+    </StyledHeaderWrapper>
+  );
 };
 
 export default Header;
