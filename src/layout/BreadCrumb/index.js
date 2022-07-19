@@ -13,12 +13,17 @@ const BreadCrumb = () => {
       {paths.map((path, i) => {
         if (i !== paths.length - 1) {
           return (
-            <StyledCrumb key={path}>
-              {path} {" > "}
-            </StyledCrumb>
+            <React.Fragment key={path}>
+              <StyledCrumb href="#">{path}</StyledCrumb>
+              {" > "}
+            </React.Fragment>
           );
         } else {
-          return <StyledFinalCrumb key={path}>{path} </StyledFinalCrumb>;
+          return (
+            <StyledFinalCrumb key={path} href="#">
+              {path}
+            </StyledFinalCrumb>
+          );
         }
       })}
     </StyledBreadCrumbWrapper>

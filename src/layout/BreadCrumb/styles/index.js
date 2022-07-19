@@ -5,9 +5,9 @@ export const StyledBreadCrumbWrapper = styled.div`
   margin: 0.25rem auto;
   font-size: 12px;
 `;
-export const StyledCrumb = styled.i`
+export const StyledCrumb = styled.a`
   color: ${({ theme }) => theme.colors.gray_01};
 `;
-export const StyledFinalCrumb = styled.i`
+export const StyledFinalCrumb = styled.a`
   color: ${({ theme }) => theme.colors.green};
 `;
