@@ -3,6 +3,7 @@ import catalogMock from "../../../mocks/catalog.mock";
 export const initialState = {
   products: catalogMock.data,
   searchTerm: "",
+  category: "",
   cart: [],
 };
 
@@ -46,6 +47,10 @@ export const reducer = (state, action) => {
     }
     case "RESET_SEARCH_TERM": {
       return { ...state, searchTerm: "" };
+    }
+
+    case "SET_CATEGORY": {
+      return { ...state, category: action.payload };
     }
 
     default: {

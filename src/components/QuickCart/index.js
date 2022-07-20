@@ -53,7 +53,7 @@ const QuickCart = () => {
           {!isFreeCargo && (
             <>
               <StyledTooltipDescription>
-                <i class="bi bi-lightning-charge-fill">
+                <i className="bi bi-lightning-charge-fill">
                   {(TRESHOLD - grandTotal).toFixed(2)} TL
                 </i>
                 'lik ürün daha ekleyin kargo bedava
@@ -65,7 +65,7 @@ const QuickCart = () => {
           )}
           {isFreeCargo && (
             <StyledTooltipDescription>
-              <i class="bi bi-hand-thumbs-up-fill"></i>
+              <i className="bi bi-hand-thumbs-up-fill"></i>
               Kargonuz Bedava{" "}
             </StyledTooltipDescription>
           )}

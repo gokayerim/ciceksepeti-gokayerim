@@ -5,20 +5,27 @@ import { StyledCatalog } from "./styles";
 
 const Catalog = () => {
   const {
-    state: { products, searchTerm },
+    state: { products, searchTerm, category },
   } = useProductContext();
   const [filteredProducts, setFilteredProducts] = useState(products);
 
   useEffect(() => {
     setFilteredProducts(
-      products?.filter((product) => {
-        if (searchTerm) {
-          return product.title.toLowerCase().includes(searchTerm);
-        }
-        return true;
-      })
+      products
+        ?.filter((product) => {
+          if (category) {
+            return product.category === category;
+          }
+          return true;
+        })
+        .filter((product) => {
+          if (searchTerm) {
+            return product.title.toLowerCase().includes(searchTerm);
+          }
+          return true;
+        })
     );
-  }, [searchTerm, products]);
+  }, [searchTerm, products, category]);
 
   return (
     <StyledCatalog>
