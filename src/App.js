@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from "react";
 import Catalog from "./components/Catalog";
 import CategorySelection from "./components/CategorySelection";
@@ -7,9 +8,9 @@ import { useProductContext } from "./utils/hooks/useProductContext";
 function App() {
   const { dispatch } = useProductContext();
 
-  function handleWindowSizeChange() {
+  const handleWindowSizeChange = () => {
     dispatch({ type: "SET_MOBILE", payload: window?.innerWidth <= 768 });
-  }
+  };
   useEffect(() => {
     handleWindowSizeChange();
     window.addEventListener("resize", handleWindowSizeChange);

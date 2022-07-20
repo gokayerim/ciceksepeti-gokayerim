@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useProductContext } from "../../utils/hooks/useProductContext";
-import Button from "../Button";
+import { StyledCatalogButton, StyledCategorySelectionWrapper } from "./styles";
 
 const CategorySelection = () => {
   const [categories, setCategories] = useState([]);
@@ -22,27 +22,27 @@ const CategorySelection = () => {
   };
 
   return (
-    <div>
-      <Button
+    <StyledCategorySelectionWrapper>
+      <StyledCatalogButton
         use={!category ? "primary" : "secondary"}
-        addOn="pill"
+        addOn="normal"
         size="large"
         onClick={() => handleCategorySelection("")}
       >
-        tüm kategoriler
-      </Button>
+        Tüm Kategoriler
+      </StyledCatalogButton>
       {categories.map((c) => (
-        <Button
+        <StyledCatalogButton
           use={category === c ? "primary" : "secondary"}
-          addOn="pill"
+          addOn="normal"
           size="large"
           key={c}
           onClick={() => handleCategorySelection(c)}
         >
           {c}
-        </Button>
+        </StyledCatalogButton>
       ))}
-    </div>
+    </StyledCategorySelectionWrapper>
   );
 };
 

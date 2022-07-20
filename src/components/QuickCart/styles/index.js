@@ -45,6 +45,19 @@ export const StyledTooltip = styled.div`
     top: -4px;
     right: 45px;
   }
+
+  @media (max-width: 768px) {
+    position: fixed;
+    bottom: 0;
+    width: auto;
+    left: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 2;
+    &::before {
+      content: unset;
+    }
+  }
 `;
 
 export const StyledTooltipDescription = styled.p`
@@ -69,4 +82,14 @@ export const StyledProgressbar = styled.div`
     border-radius: 2px;
     background-color: ${({ theme }) => theme.colors.yellow};
   }
+`;
+
+export const StyledBackdrop = styled.div`
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #3339;
+  z-index: 1;
 `;
