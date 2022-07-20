@@ -11,6 +11,7 @@ function App() {
     dispatch({ type: "SET_MOBILE", payload: window?.innerWidth <= 768 });
   }
   useEffect(() => {
+    handleWindowSizeChange();
     window.addEventListener("resize", handleWindowSizeChange);
     return () => {
       window.removeEventListener("resize", handleWindowSizeChange);

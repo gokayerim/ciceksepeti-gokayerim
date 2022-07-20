@@ -19,7 +19,9 @@ export const StyledHeaderWrapper = styled.header`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    margin-right: 12px;
+    margin-left: 12px;
+    width: calc(100% - 24px);
   }
 `;
 export const StyledLogo = styled.img`

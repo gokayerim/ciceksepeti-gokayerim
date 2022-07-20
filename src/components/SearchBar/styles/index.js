@@ -11,6 +11,13 @@ export const StyledInputWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
+
+  @media (max-width: 768px) {
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    width: auto;
+  }
 `;
 export const StyledInput = styled.input`
   border: none;
