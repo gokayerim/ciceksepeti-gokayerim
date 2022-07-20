@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import Catalog from "./components/Catalog";
 import CategorySelection from "./components/CategorySelection";
+import InfoCards from "./components/InfoCards";
 import Layout from "./layout";
 import { useProductContext } from "./utils/hooks/useProductContext";
 
@@ -23,6 +24,7 @@ function App() {
     <Layout>
       <CategorySelection />
       <Catalog />
+      <InfoCards />
     </Layout>
   );
 }

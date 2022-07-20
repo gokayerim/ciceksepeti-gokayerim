@@ -12,7 +12,7 @@ export const StyledInputWrapper = styled.div`
   align-items: center;
   padding: 0 1rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakPoints.mobile}) {
     margin-right: 12px;
     margin-left: 12px;
     margin-bottom: 12px;

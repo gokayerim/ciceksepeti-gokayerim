@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useProductContext } from "../../utils/hooks/useProductContext";
 import Product from "../Product";
-import { StyledCatalog } from "./styles";
+import { StyledCatalog, StyledNoProductTitle } from "./styles";
 
 const Catalog = () => {
   const {
@@ -40,7 +40,7 @@ const Catalog = () => {
           />
         ))
       ) : (
-        <h2>Urun bulunamadı</h2>
+        <StyledNoProductTitle>Ürün Bulunamadı.</StyledNoProductTitle>
       )}
     </StyledCatalog>
   );

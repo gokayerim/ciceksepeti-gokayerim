@@ -4,15 +4,17 @@ const Container = styled.main`
   margin-right: auto;
   margin-left: auto;
 
-  @media (min-width: 1200px) {
-    width: 1200px;
+  @media (min-width: ${({ theme }) => theme.breakPoints.desktop}) {
+    width: ${({ theme }) => theme.breakPoints.desktop};
   }
 
-  @media (max-width: 1200px) and (min-width: 768px) {
-    width: 768px;
+  @media (max-width: ${({ theme }) =>
+      theme.breakPoints.desktop}) and (min-width: ${({ theme }) =>
+      theme.breakPoints.mobile}) {
+    width: ${({ theme }) => theme.breakPoints.mobile};
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakPoints.mobile}) {
     margin-right: 12px;
     margin-left: 12px;
     width: calc(100% - 24px);

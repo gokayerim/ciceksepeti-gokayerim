@@ -14,4 +14,8 @@ export default {
     gray_02: "#E2E7E9",
     gray_03: "#EDF1F2",
   },
+  breakPoints: {
+    mobile: "768px",
+    desktop: "1200px",
+  },
 };

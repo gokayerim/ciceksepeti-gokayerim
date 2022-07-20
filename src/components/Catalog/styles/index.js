@@ -7,3 +7,7 @@ export const StyledCatalog = styled.section`
   justify-content: center;
   gap: 20px;
 `;
+
+export const StyledNoProductTitle = styled.h2`
+  color: ${({ theme }) => theme.colors.gray_01};
+`;
