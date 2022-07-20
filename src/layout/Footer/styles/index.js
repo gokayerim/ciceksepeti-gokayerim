@@ -6,12 +6,22 @@ export const FooterWrapper = styled.footer`
   background-color: ${({ theme }) => theme.colors.gray_03};
   align-items: center;
 `;
-export const FooterContainer = styled.section`
-  width: 60%;
-`;
+export const FooterContainer = styled.section``;
 
 export const StyledDescription = styled.div`
   margin: 1rem auto;
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+
+  @media (max-width: 1200px) and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 export const StyledCopyRight = styled.div`
   background-color: ${({ theme }) => theme.colors.gray_02};

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledBreadCrumbWrapper = styled.div`
-  width: 60%;
   margin: 0.25rem auto;
   font-size: 12px;
 `;

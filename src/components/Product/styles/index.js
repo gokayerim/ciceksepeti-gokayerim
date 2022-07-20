@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledProductWrapper = styled.article`
   display: flex;
-  width: 250px;
+  width: 150px;
   flex-flow: column;
   border: 1px solid ${({ theme }) => theme.colors.gray_02};
   padding: 20px 10px;

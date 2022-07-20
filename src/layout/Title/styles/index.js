@@ -8,5 +8,4 @@ export const StyledTitleWrapper = styled.div`
 export const StyledTitle = styled.h1`
   color: white;
   margin: auto;
-  width: 60%;
 `;

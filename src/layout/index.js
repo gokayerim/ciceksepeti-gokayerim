@@ -1,16 +1,17 @@
 import React from "react";
 import Header from "./Header";
-import Title from "./Title";
 import BreadCrumb from "./BreadCrumb";
 import Footer from "./Footer";
+import Container from "./Container";
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <Title />
-      <BreadCrumb />
-      {children}
+      <Container>
+        <BreadCrumb />
+        {children}
+      </Container>
       <Footer />
     </>
   );

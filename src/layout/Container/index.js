@@ -1,12 +1,6 @@
 import styled from "styled-components";
 
-export const StyledHeaderWrapper = styled.header`
-  height: 4rem;
-  display: flex;
-  margin: 1rem auto;
-  justify-content: space-between;
-  align-items: center;
-
+const Container = styled.main`
   margin-right: auto;
   margin-left: auto;
 
@@ -22,7 +16,5 @@ export const StyledHeaderWrapper = styled.header`
     width: 100%;
   }
 `;
-export const StyledLogo = styled.img`
-  width: 12rem;
-  height: min-content;
-`;
+
+export default Container;

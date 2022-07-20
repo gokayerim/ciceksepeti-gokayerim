@@ -53,6 +53,9 @@ export const reducer = (state, action) => {
       return { ...state, category: action.payload };
     }
 
+    case "SET_MOBILE": {
+      return { ...state, isMobile: action.payload };
+    }
     default: {
       return state;
     }

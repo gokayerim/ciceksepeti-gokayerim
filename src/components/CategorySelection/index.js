@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useProductContext } from "../../utils/hooks/useProductContext";
 import Button from "../Button";
-import { secondary } from "../Button/styles/use";
 
 const CategorySelection = () => {
   const [categories, setCategories] = useState([]);
